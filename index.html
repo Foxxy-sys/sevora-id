@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sevora — Fine Dining Experience</title>
+<meta name="description" content="Sevora. Sebuah perjalanan rasa dalam diam, disajikan dengan detail.">
+
+<!-- Primary SEO -->
+<title>Sevora — Luxury Fine Dining Restaurant Website Template</title>
+<meta name="description"content="Sevora is a luxury fine dining restaurant website template designed with elegant typography, refined layouts, and a premium dining experience.">
+<link rel="canonical" href="https://sevora.example.com/">
+<link rel="icon" type="image/png" href="images/logo/Logo Sevora.jpg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sevora — Luxury Fine Dining Restaurant Website Template">
+<meta property="og:description" content="Elegant restaurant website template crafted for fine dining, luxury restaurants, and premium culinary brands.">
+<meta property="og:image" content="images/og-image.jpg">
+<meta property="og:url" content="https://sevora.example.com/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sevora — Luxury Fine Dining Restaurant Website Template">
+<meta name="twitter:description" content="Elegant restaurant website template crafted for premium culinary brands.">
+<meta name="twitter:image" content="images/og-image.jpg">
+
+<!-- Theme color (Android / mobile browser UI) -->
+<meta name="theme-color" content="#2C2622">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<meta name="theme-color" content="#2E2018"> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!-- ===================== LOADING SCREEN ===================== -->
+<div class="loader" id="loader">
+  <div class="loader__mark">
+    <span class="loader__letter"><img src="images/logo/Logo Sevora.jpg" alt="" style="height:170px; width:170px; border-radius: 20px;"></span>
+  </div>
+  <div class="loader__rule"><span id="loaderProgress"></span></div>
+  <div class="loader__label">Menata meja anda</div>
+</div>
+
+<!-- ===================== SCROLL PROGRESS ===================== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <a href="#hero" class="navbar__logo">Sevora</a>
+
+  <nav class="navbar__nav" id="navbarNav">
+    <a href="#about" class="navbar__link">Tentang</a>
+    <a href="#signature" class="navbar__link">Hidangan Utama</a>
+    <a href="#menu" class="navbar__link">Menu</a>
+    <a href="#gallery" class="navbar__link">Galeri</a>
+    <a href="#testimonials" class="navbar__link">Cerita Tamu</a>
+    <a href="#location" class="navbar__link">Lokasi</a>
+  </nav>
+
+  <a href="#reservation" class="navbar__cta">Reservasi</a>
+
+  <button class="navbar__burger" id="burgerBtn" aria-label="Buka menu">
+    
+  </button>
+</header>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-menu__nav">
+    <a href="#about" class="mobile-link">Tentang</a>
+    <a href="#signature" class="mobile-link">Hidangan Utama</a>
+    <a href="#menu" class="mobile-link">Menu</a>
+    <a href="#gallery" class="mobile-link">Galeri</a>
+    <a href="#testimonials" class="mobile-link">Cerita Tamu</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#location" class="mobile-link">Lokasi</a>
+  </nav>
+  <a href="#reservation" class="mobile-menu__cta">Pesan Meja</a>
+</div>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"
+     style="background-image: url('images/hero/Hero Wallpaper4.jpg');">
+    </div>
+    <div class="hero__scrim"></div>
+    <div class="hero__content">
+      <div class="hero__meta reveal">
+        <span>Restoran</span><i></i><span>Fine Dining</span><i></i><span>Sejak 2026</span>
+      </div>
+      <h1 class="hero__title reveal">Rasa yang<br>Berbicara<br><em>Pelan</em></h1>
+      <p class="hero__desc reveal">Sevora menyajikan hidangan yang dirancang untuk dinikmati tanpa tergesa —
+      setiap piring adalah satu paragraf dalam cerita malam anda.</p>
+      <div class="hero__rating reveal">
+        <span class="hero__stars">★★★★★</span>
+        <span>4.9 dari 500+ tamu</span>
+      </div>
+      <div class="hero__actions reveal">
+        <a href="#reservation" class="btn btn--gold">Reservasi Meja</a>
+        <a href="#menu" class="btn btn--ghost">Lihat Menu</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Gulir</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about about--balanced" id="about">
+    <div class="about__image reveal">
+      <img src="images/about/About Wallpaper2.jpg" alt="Interior ruang makan Sevora">
+      <div class="about__frame"></div>
+      <div class="about__badge">
+        <span class="about__badge-year">Est.</span>
+        <span class="about__badge-num">2014</span>
+      </div>
+    </div>
+    <div class="about__content">
+      <p class="eyebrow reveal">Filosofi Kami</p>
+      <h2 class="reveal">Bukan tentang<br>seberapa banyak.<br>Tapi seberapa <em>dalam</em>.</h2>
+      <div class="about__trust reveal">
+        <span class="hero__stars">★★★★★</span>
+        <span>Dipercaya oleh 5.000+ Tamu</span>
+      </div>
+      <p class="about__lead reveal"><span class="dropcap">S</span>avore lahir dari satu keyakinan sederhana: makan malam yang baik adalah
+      ruang untuk melambat. Setiap bahan dipilih dengan sabar, setiap piring dirancang
+      untuk dibaca — bukan sekadar disantap.</p>
+      <p class="reveal">Dapur kami menggabungkan teknik klasik Eropa dengan kepekaan rasa Asia modern,
+      dituangkan dalam suasana yang hangat, temaram, dan jujur.</p>
+      <div class="about__stats reveal">
+        <div class="stat"><span class="stat__num">12</span><span class="stat__label">Tahun Berkarya</span></div>
+        <div class="stat"><span class="stat__num">4</span><span class="stat__label">Musim Menu / Tahun</span></div>
+        <div class="stat"><span class="stat__num">1</span><span class="stat__label">Meja untuk Anda</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SIGNATURE DISHES ("The Tasting Line") ===================== -->
+  <section class="signature" id="signature">
+    <div class="signature__intro">
+      <p class="eyebrow reveal">Hidangan Utama</p>
+      <h2 class="reveal">Empat Babak,<br>Satu Cerita</h2>
+    </div>
+
+    <div class="tasting-line" id="tastingLine">
+      <div class="tasting-line__rail"><div class="tasting-line__fill" id="tastingFill"></div></div>
+
+      <article class="dish reveal">
+        <div class="dish__media">
+          <img src="images/menu/Menu Image2.jpg" alt="Tuna Bakar, Yuzu & Bawang Panggang">
+        </div>
+        <div class="dish__text">
+          <span class="dish__course">Babak Satu — Pembuka</span>
+          <h3>Tuna Bakar, Yuzu &amp; Bawang Panggang</h3>
+          <p>Tuna sirip kuning dibakar sekilas di atas bara, disandingkan dengan yuzu segar
+          dan bawang yang dipanggang hingga manis karamelnya keluar.</p>
+        </div>
+      </article>
+
+      <article class="dish dish--reverse reveal">
+        <div class="dish__media">
+          <img src="images/menu/Menu Image3.jpg" alt="Risotto Truffle Hitam">
+        </div>
+        <div class="dish__text">
+          <span class="dish__course">Babak Dua — Antara</span>
+          <h3>Risotto Truffle Hitam &amp; Parmesan Tua</h3>
+          <p>Beras arborio dimasak perlahan dalam kaldu jamur, diselesaikan dengan
+          serutan truffle hitam dan parmesan yang telah matang 24 bulan.</p>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish__media">
+          <img src="images/menu/Menu Image4.jpg" alt="Wagyu Panggang Arang">
+        </div>
+        <div class="dish__text">
+          <span class="dish__course">Babak Tiga — Utama</span>
+          <h3>Wagyu A5, Panggang Arang Binchotan</h3>
+          <p>Wagyu A5 dipanggang di atas arang binchotan, disajikan dengan reduksi
+          demi-glace anggur merah dan sayuran musim yang dipetik pagi hari.</p>
+        </div>
+      </article>
+
+      <article class="dish dish--reverse reveal">
+        <div class="dish__media">
+          <img src="images/menu/Menu Image5.jpg" alt="Dessert penutup Sevora">
+        </div>
+        <div class="dish__text">
+          <span class="dish__course">Babak Empat — Penutup</span>
+          <h3>Cokelat Valrhona &amp; Kopi Gayo</h3>
+          <p>Fondant cokelat Valrhona 70%, es krim kopi Gayo, dan remah kacang mete —
+          penutup yang tenang untuk mengakhiri cerita malam ini.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="menu" id="menu">
+    <p class="eyebrow reveal center">Menu Musim Ini</p>
+    <h2 class="reveal center">Yang Bisa Anda Pesan</h2>
+
+    <div class="menu__tabs reveal" role="tablist">
+      <button class="menu__tab is-active" data-tab="appetizer">Pembuka</button>
+      <button class="menu__tab" data-tab="main">Hidangan Utama</button>
+      <button class="menu__tab" data-tab="dessert">Penutup</button>
+      <button class="menu__tab" data-tab="drinks">Minuman</button>
+    </div>
+
+    <div class="menu__panel is-active" data-panel="appetizer">
+      <div class="menu__item reveal"><div class="menu__name"><h4>Tuna Bakar Yuzu</h4><span class="menu__badge">Populer</span></div><span class="dots"></span><span class="price">Rp 185K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Foie Gras Panggang, Fig Jam</h4></div><span class="dots"></span><span class="price">Rp 245K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Salad Burrata &amp; Tomat Panggang</h4></div><span class="dots"></span><span class="price">Rp 165K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Sup Jamur Truffle</h4></div><span class="dots"></span><span class="price">Rp 155K</span></div>
+    </div>
+
+    <div class="menu__panel" data-panel="main">
+      <div class="menu__item reveal"><div class="menu__name"><h4>Wagyu A5 Binchotan</h4><span class="menu__badge menu__badge--chef">Chef's Recommendation</span></div><span class="dots"></span><span class="price">Rp 780K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Risotto Truffle Hitam</h4><span class="menu__badge">Populer</span></div><span class="dots"></span><span class="price">Rp 285K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Ikan Kakap, Saus Butter Lemon</h4></div><span class="dots"></span><span class="price">Rp 320K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Duck Confit, Jus Jeruk</h4></div><span class="dots"></span><span class="price">Rp 340K</span></div>
+    </div>
+
+    <div class="menu__panel" data-panel="dessert">
+      <div class="menu__item reveal"><div class="menu__name"><h4>Fondant Cokelat Valrhona</h4><span class="menu__badge">Populer</span></div><span class="dots"></span><span class="price">Rp 145K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Tiramisu Kopi Gayo</h4></div><span class="dots"></span><span class="price">Rp 135K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Creme Brulee Vanilla Madagascar</h4></div><span class="dots"></span><span class="price">Rp 130K</span></div>
+    </div>
+
+    <div class="menu__panel" data-panel="drinks">
+      <div class="menu__item reveal"><div class="menu__name"><h4>Old Fashioned Sevora</h4><span class="menu__badge menu__badge--chef">Chef's Recommendation</span></div><span class="dots"></span><span class="price">Rp 195K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Anggur Merah, Pilihan Sommelier</h4></div><span class="dots"></span><span class="price">Rp 250K</span></div>
+      <div class="menu__item reveal"><div class="menu__name"><h4>Kopi Gayo Tubruk</h4></div><span class="dots"></span><span class="price">Rp 65K</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery" id="gallery">
+    <p class="eyebrow reveal center">Gallery</p>
+    <h2 class="reveal center">Sepotong Suasana</h2>
+
+    <div class="gallery__grid">
+      <button class="gallery__item reveal" data-full="images/gallery/Gallery Image.jpg"><img src="images/gallery/Gallery Image.jpg" alt="Outdoor Table"><span class="gallery__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.35-4.35"/><path d="M10.5 8v5M8 10.5h5"/></svg></span></button>
+      <button class="gallery__item reveal" data-full="images/gallery/Gallery Image2.jpg"><img src="images/gallery/Gallery Image2.jpg" alt="Chef"><span class="gallery__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.35-4.35"/><path d="M10.5 8v5M8 10.5h5"/></svg></span></button>
+      <button class="gallery__item reveal" data-full="images/gallery/Gallery Image3.jpg"><img src="images/gallery/Gallery Image3.jpg" alt="Plating Sevora"><span class="gallery__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.35-4.35"/><path d="M10.5 8v5M8 10.5h5"/></svg></span></button>
+      <button class="gallery__item reveal" data-full="images/gallery/Gallery Image4.jpg"><img src="images/gallery/Gallery Image4.jpg" alt="Ruang makan Sevora"><span class="gallery__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.35-4.35"/><path d="M10.5 8v5M8 10.5h5"/></svg></span></button>
+      <button class="gallery__item reveal" data-full="images/gallery/Gallery Image5.jpg"><img src="images/gallery/Gallery Image5.jpg" alt="Meja makan Sevora"><span class="gallery__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.35-4.35"/><path d="M10.5 8v5M8 10.5h5"/></svg></span></button>
+      <button class="gallery__item reveal" data-full="images/gallery/Gallery Image6.jpg"><img src="images/gallery/Gallery Image6.jpg" alt="Interior Sevora"><span class="gallery__zoom" aria-hidden("true"><svg viewBox="0 0 24 24" fill="none" stroke("currentColor" stroke-width("1.4"><circle cx("10.5" cy("10.5" r("6.5"/><path d("M20 20l-4.35-4.35"/><path d("M10.5 8v5M8 10.5h5"/></svg></span></button>
+    </div>
+  </section>
+
+  <!-- ===================== RESERVATION ===================== -->
+  <section class="reservation" id="reservation">
+    <div class="reservation__content">
+      <p class="eyebrow eyebrow--light reveal">Reservasi</p>
+      <h2 class="reveal">Satu Meja Sedang<br>Menunggu Anda</h2>
+      <p class="reveal">Kami membatasi jumlah tamu setiap malam agar setiap meja mendapat perhatian penuh.
+      Pesan lebih awal, terutama untuk akhir pekan.</p>
+    </div>
+
+    <form class="reservation__form reveal" id="reservationForm">
+      <div class="form__row">
+        <div class="form__field">
+          <label for="resName"><svg class="form__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="3.4"/><path d="M4.5 20c0-4.1 3.4-7.5 7.5-7.5s7.5 3.4 7.5 7.5"/></svg>Nama</label>
+          <input type="text" id="resName" name="name" placeholder="Nama lengkap" required>
+        </div>
+        <div class="form__field">
+          <label for="resPhone"><svg class="form__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 4h3.5l1.5 4.5-2 1.5a11 11 0 0 0 6.5 6.5l1.5-2 4.5 1.5V19c0 1.1-.9 2-2 2C9.6 21 3 14.4 3 6c0-1.1.9-2 2-2z"/></svg>Telepon</label>
+          <input type="tel" id="resPhone" name="phone" placeholder="08xx xxxx xxxx" required>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__field">
+          <label for="resDate"><svg class="form__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="16" rx="1.5"/><path d="M3 9.5h18M8 3v4M16 3v4"/></svg>Tanggal</label>
+          <input type="date" id="resDate" name="date" required>
+        </div>
+        <div class="form__field">
+          <label for="resTime"><svg class="form__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Waktu</label>
+          <select id="resTime" name="time" required>
+            <option value="">Pilih waktu</option>
+            <option>18:00</option>
+            <option>19:00</option>
+            <option>20:00</option>
+            <option>21:00</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <label for="resGuests"><svg class="form__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M15.8 13.2c2.3.3 4.2 2.3 4.2 4.7"/></svg>Tamu</label>
+          <select id="resGuests" name="guests" required>
+            <option value="">Jumlah</option>
+            <option>2 Orang</option>
+            <option>4 Orang</option>
+            <option>6 Orang</option>
+            <option>8+ Orang</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn--gold btn--block">Konfirmasi Reservasi</button>
+      <p class="form__success" id="formSuccess">Terima kasih. Tim kami akan menghubungi anda untuk konfirmasi meja.</p>
+    </form>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <p class="eyebrow reveal center">Cerita Tamu</p>
+    <h2 class="reveal center">Yang Mereka Rasakan</h2>
+
+    <div class="slider" id="slider">
+      <div class="slider__track" id="sliderTrack">
+        <div class="slide">
+          <p class="slide__quote">"Setiap hidangan terasa seperti sebuah kalimat yang disusun dengan hati-hati.
+          Ini bukan makan malam, ini pengalaman membaca cerita lewat rasa."</p>
+          <p class="slide__author">Andina R. — Bandung</p>
+        </div>
+        <div class="slide">
+          <p class="slide__quote">"Pelayanannya tenang tanpa terasa kaku. Wagyu-nya salah satu yang terbaik
+          yang pernah saya coba di Indonesia."</p>
+          <p class="slide__author">Bagas P. — Jakarta</p>
+        </div>
+        <div class="slide">
+          <p class="slide__quote">"Suasana temaram, meja yang jaraknya pas, dan musik yang tidak pernah
+          mengalahkan percakapan. Detail yang jarang saya temukan."</p>
+          <p class="slide__author">Clarissa T. — Bandung</p>
+        </div>
+      </div>
+      <div class="slider__dots" id="sliderDots"></div>
+      <button class="slider__arrow slider__arrow--prev" id="sliderPrev" aria-label="Sebelumnya">←</button>
+      <button class="slider__arrow slider__arrow--next" id="sliderNext" aria-label="Berikutnya">→</button>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq" id="faq">
+    <p class="eyebrow reveal center">Pertanyaan Umum</p>
+    <h2 class="reveal center">Sebelum Anda Datang</h2>
+
+    <div class="accordion">
+      <div class="accordion__item reveal">
+        <button class="accordion__head">Apakah perlu reservasi terlebih dahulu?<span class="accordion__icon"></span></button>
+        <div class="accordion__body"><p>Ya. Kami sangat menyarankan reservasi minimal 2 hari sebelumnya,
+        terutama untuk Jumat dan Sabtu malam, karena kapasitas kami terbatas.</p></div>
+      </div>
+      <div class="accordion__item reveal">
+        <button class="accordion__head">Apakah tersedia menu untuk vegetarian?<span class="accordion__icon"></span></button>
+        <div class="accordion__body"><p>Tersedia. Beri tahu tim kami saat reservasi, dan chef kami akan
+        menyiapkan variasi tasting menu yang sesuai.</p></div>
+      </div>
+      <div class="accordion__item reveal">
+        <button class="accordion__head">Bagaimana dengan dress code?<span class="accordion__icon"></span></button>
+        <div class="accordion__body"><p>Kami menyarankan smart casual hingga formal. Kami dengan hormat
+        tidak menerima sandal jepit dan pakaian pantai.</p></div>
+      </div>
+      <div class="accordion__item reveal">
+        <button class="accordion__head">Apakah ada kebijakan pembatalan?<span class="accordion__icon"></span></button>
+        <div class="accordion__body"><p>Pembatalan gratis hingga 24 jam sebelum jadwal. Setelah itu,
+        kami mengenakan biaya administrasi sebesar 50% dari estimasi tagihan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOCATION ===================== -->
+  <section class="location" id="location">
+    <div class="location__info">
+      <p class="eyebrow reveal">Lokasi</p>
+      <h2 class="reveal">Temukan Kami<br>di Bandung</h2>
+      <div class="location__details reveal">
+        <div>
+          <h4>Alamat</h4>
+          <p>Jl. Riau No. 21, Citarum, Bandung Wetan<br>Bandung, Jawa Barat 40115</p>
+        </div>
+        <div>
+          <h4>Jam Buka</h4>
+          <p>Selasa – Minggu, 18.00 – 23.00<br>Tutup setiap Senin</p>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <p>+62 22 8888 0192<br>reservasi@sevora.id</p>
+        </div>
+      </div>
+      <a href="#reservation" class="btn btn--outline reveal">Pesan Meja Sekarang</a>
+    </div>
+    <div class="location__map reveal">
+      <iframe title="Peta Lokasi Sevora" src="https://www.google.com/maps?q=Jl.+Riau,+Bandung&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <a href="#hero" class="footer__logo">Sevora</a>
+      <p class="footer__tagline">Rasa yang berbicara pelan.</p>
+      <p class="footer__hours">
+        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        Buka Selasa–Minggu, 18.00–23.00
+      </p>
+    </div>
+
+    <nav class="footer__nav">
+      <span class="footer__col-title">Jelajahi</span>
+      <a href="#about">Tentang</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#reservation">Reservasi</a>
+      <a href="#location">Lokasi</a>
+    </nav>
+
+    <div class="footer__contact">
+      <span class="footer__col-title">Hubungi Kami</span>
+      <a href="#" aria-label="Instagram">
+        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        Instagram
+      </a>
+      <a href="#" aria-label="Facebook">
+        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 8.5h2.5V5H14c-2 0-3.5 1.6-3.5 3.5V11H8v3h2.5v6H14v-6h2.3l.4-3H14V8.7c0-.2.1-.2.2-.2z"/></svg>
+        Facebook
+      </a>
+      <a href="mailto:reservasi@sevora.id" aria-label="Email">
+        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+        Email
+      </a>
+      <a href="tel:+622288880192" aria-label="Telepon">
+        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 4h3.5l1.5 4.5-2 1.5a11 11 0 0 0 6.5 6.5l1.5-2 4.5 1.5V19c0 1.1-.9 2-2 2C9.6 21 3 14.4 3 6c0-1.1.9-2 2-2z"/></svg>
+        Telepon
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>© 2026 Sevora. Seluruh hak cipta dilindungi.</span>
+    <span>Dibuat oleh NOVR Studio</span>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">✕</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

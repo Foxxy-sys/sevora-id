@@ -1,0 +1,56 @@
+Sevora
+
+Copyright © 2026 NOVR Studio.
+All Rights Reserved.
+
+----------------------------------------------------
+LICENSE
+----------------------------------------------------
+
+Thank you for purchasing Sevora.
+
+This template is licensed for one (1) end product only.
+
+You are allowed to:
+
+✔ Use the template for one personal project.
+✔ Use the template for one commercial project.
+✔ Modify the HTML, CSS, JavaScript, and images to suit your needs.
+✔ Replace demo content with your own branding.
+
+You are NOT allowed to:
+
+✘ Resell this template.
+✘ Redistribute the source files.
+✘ Share the template publicly.
+✘ Upload this template to marketplaces or repositories.
+✘ Claim this template as your own work.
+✘ Sell modified versions of this template.
+
+----------------------------------------------------
+DEMO ASSETS
+----------------------------------------------------
+
+Images used in the live demo are for preview purposes only.
+
+Please replace them with your own images before publishing your website.
+
+----------------------------------------------------
+SUPPORT
+----------------------------------------------------
+
+Email
+
+novrstudio.id@gmail.com
+
+Instagram
+
+https://instagram.com/marcell_adriann
+
+----------------------------------------------------
+
+Designed and developed by
+
+NOVR Studio
+
+Built to be remembered.

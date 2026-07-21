@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sevora — Documentation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="icon" type="image/png" href="images/Logo Sevora.png">
+</head>
+<body>
+<div class="app">
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/Logo Sevora.png" style="height:30px;width:30px;" alt="Sevora">
+      <div class="brand-text">
+        <span class="name">Sevora</span>
+        <span class="tag">Documentation</span>
+      </div>
+    </div>
+    <span class="version-badge">v1.0.0</span>
+    <button class="menu-toggle" id="menuToggle">Menu ▾</button>
+  </header>
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-group-label">Getting Started</div>
+    <nav class="sidebar-nav">
+      <a href="#introduction"><span class="bean"></span>Introduction</a>
+      <a href="#preview"><span class="bean"></span>Preview</a>
+      <a href="#quick-start"><span class="bean"></span>Quick Start</a>
+      <a href="#installation"><span class="bean"></span>Installation</a>
+      <a href="#folder-structure"><span class="bean"></span>Folder Structure</a>
+    </nav>
+    <div class="sidebar-group-label">Reference</div>
+    <nav class="sidebar-nav">
+      <a href="#features"><span class="bean"></span>Features</a>
+      <a href="#customization"><span class="bean"></span>Customization</a>
+    </nav>
+    <div class="sidebar-group-label">More</div>
+    <nav class="sidebar-nav">
+      <a href="#credits"><span class="bean"></span>Credits</a>
+      <a href="#license"><span class="bean"></span>License</a>
+      <a href="#support"><span class="bean"></span>Support</a>
+    </nav>
+  </aside>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="content">
+
+    <!-- Hero card -->
+    <div class="hero-card">
+      <div class="hero-mark"><img src="images/Logo Sevora.png" style="height:50px;width:50px;" alt="Sevora"></div>
+      <div class="hero-text">
+        <h1>Sevora</h1>
+        <p class="hero-sub">Luxury Fine Dining Restaurant Website Template</p>
+        <div class="hero-meta">
+          <span>Version 1.0.0</span>
+          <span class="dot">•</span>
+          <span>Created by <strong>NOVR Studio</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Template info card -->
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="info-label">Version</span>
+        <span class="info-value">1.0.0</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Released</span>
+        <span class="info-value">July 2026</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Author</span>
+        <span class="info-value">NOVR Studio</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Framework</span>
+        <span class="info-value">Vanilla HTML</span>
+      </div>
+    </div>
+
+    <section class="doc-section" id="preview">
+      <span class="eyebrow">Overview</span>
+      <h2>Template Preview</h2>
+      <p>
+        Berikut tampilan halaman utama Sevora. Template ini mencakup landing page
+        fine dining yang lengkap, mulai dari loading screen hingga reservasi meja,
+        sepenuhnya responsif di semua perangkat.
+      </p>
+      <div class="preview-image">
+        <img src="images/Home Preview.png" alt="Sevora Homepage">
+      </div>
+    </section>
+
+    <section class="doc-section" id="introduction">
+      <span class="eyebrow">Overview</span>
+      <h2>Introduction</h2>
+      <p>Sevora adalah template HTML untuk restoran fine dining dan kuliner premium yang dirancang dengan tipografi elegan, layout yang tenang, dan nuansa gelap-keemasan khas restoran mewah. Setiap bagian — dari hero, hidangan utama, menu, galeri, hingga reservasi — disusun dengan struktur yang konsisten dan mudah diubah.</p>
+      <p>Dokumentasi ini akan membantu kamu memahami cara instalasi, struktur file, dan cara mengganti konten dalam hitungan menit.</p>
+    </section>
+
+    <section class="doc-section" id="quick-start">
+      <span class="eyebrow">Getting Started</span>
+      <h2>Quick Start</h2>
+      <p>Pastikan hal-hal berikut tersedia sebelum mulai.</p>
+      <div class="req-card">
+        <ul class="feature-list-plain">
+          <li>Browser modern (Chrome, Firefox, Edge, Safari)</li>
+          <li>Code editor — disarankan VS Code</li>
+          <li>Ekstensi Live Server</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="doc-section" id="installation">
+      <span class="eyebrow">Getting Started</span>
+      <h2>Installation</h2>
+      <p>Ikuti tiga langkah berikut untuk menjalankan template di komputer kamu.</p>
+      <ol class="steps">
+        <li>Extract file <code>sevora.zip</code> yang kamu unduh setelah pembelian.</li>
+        <li>Buka folder hasil extract menggunakan code editor pilihanmu.</li>
+        <li>Jalankan file <code>index.html</code> menggunakan ekstensi <code>Live Server</code>, atau buka langsung di browser.</li>
+      </ol>
+    </section>
+
+    <section class="doc-section" id="folder-structure">
+      <span class="eyebrow">Reference</span>
+      <h2>Folder Structure</h2>
+      <p>Berikut struktur folder utama pada template.</p>
+      <ul class="file-tree">
+        <li class="folder">assets
+          <ul>
+            <li class="folder">css
+              <ul>
+                <li class="file">style.css</li>
+                <li class="file">responsive.css</li>
+              </ul>
+            </li>
+            <li class="folder">js
+              <ul>
+                <li class="file">main.js</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="folder">images
+          <ul>
+            <li class="folder">logo</li>
+            <li class="folder">favicon</li>
+            <li class="folder">hero</li>
+            <li class="folder">about</li>
+            <li class="folder">menu</li>
+            <li class="folder">gallery</li>
+          </ul>
+        </li>
+        <li class="file">index.html</li>
+        <li class="file">README.md</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="features">
+      <span class="eyebrow">Reference</span>
+      <h2>Features</h2>
+      <p>Ringkasan fitur yang tersedia di dalam template ini.</p>
+      <div class="feature-grid">
+        <div class="feature-card">Loading Screen</div>
+        <div class="feature-card">Scroll Progress Bar</div>
+        <div class="feature-card">Sticky Navbar &amp; Mobile Menu</div>
+        <div class="feature-card">Signature Dishes Timeline</div>
+        <div class="feature-card">Menu Tabs</div>
+        <div class="feature-card">Gallery Lightbox</div>
+        <div class="feature-card">Reservation Form</div>
+        <div class="feature-card">Testimonial Slider</div>
+        <div class="feature-card">FAQ Accordion</div>
+      </div>
+    </section>
+
+    <section class="doc-section" id="customization">
+      <span class="eyebrow">Reference</span>
+      <h2>Customization</h2>
+      <p>Bagian ini menjelaskan cara mengganti elemen paling umum diubah pengguna.</p>
+
+      <h3>Logo</h3>
+      <p>Ganti file logo pada folder berikut, lalu simpan dengan nama file yang sama.</p>
+      <div class="code-block">
+        <button class="copy-btn" data-copy="images/logo/logo-sevora.png">Copy</button>
+        <pre><code>images/logo/logo-sevora.png</code></pre>
+      </div>
+
+      <h3>Warna</h3>
+      <p>Ubah variabel warna pada bagian paling atas file CSS utama.</p>
+      <div class="code-block">
+        <button class="copy-btn" data-copy="assets/css/style.css">Copy</button>
+        <pre><code>assets/css/style.css</code></pre>
+      </div>
+
+      <h3>Gambar Hero</h3>
+      <p>Ganti gambar latar hero pada elemen <code>.hero__bg</code> di dalam <code>index.html</code>.</p>
+      <div class="code-block">
+        <button class="copy-btn" data-copy="images/hero/Hero Wallpaper4.jpg">Copy</button>
+        <pre><code>images/hero/Hero Wallpaper4.jpg</code></pre>
+      </div>
+    </section>
+
+    <section class="doc-section" id="credits">
+      <span class="eyebrow">More</span>
+      <h2>Credits</h2>
+      <p>Template ini menggunakan beberapa aset pihak ketiga berikut:</p>
+      <ul class="feature-list-plain">
+        <li>Google Fonts — DM Serif Display, Manrope</li>
+        <li>Unsplash — foto placeholder</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="license">
+      <span class="eyebrow">More</span>
+      <h2>License</h2>
+      <p>Template ini dilisensikan untuk satu penggunaan akhir (single end product), sesuai ketentuan lisensi pada platform tempat kamu membeli. Redistribusi ulang sebagai template tidak diizinkan.</p>
+    </section>
+
+    <section class="doc-section" id="support">
+      <span class="eyebrow">More</span>
+      <h2>Support</h2>
+      <p>Butuh bantuan? Hubungi kami melalui salah satu kanal berikut.</p>
+      <div class="support-list">
+        <a href="mailto:novrstudio.id@gmail.com">novrstudio.id@gmail.com</a>
+        <a href="https://www.instagram.com/marcell_adriann?igsh=MWZvbHgwcDB1NGhm">Instagram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    Thank you for using Sevora.
+    <span class="studio">NOVR Studio · 2026</span>
+  </footer>
+
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
