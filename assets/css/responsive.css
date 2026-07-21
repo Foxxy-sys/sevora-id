@@ -1,72 +1,15 @@
 /* ==========================================================================
    SAVORE — responsive.css
-   Loaded after style.css. Contains every breakpoint-specific override so the
-   core design file stays desktop-first and easy to read.
-
-   Breakpoints:
-   - 1200px  large tablet / small laptop
-   - 1000px  tablet (stacked layouts begin)
-   - 768px   large mobile / small tablet
-   - 640px   mobile
-   - 400px   small mobile
+   Loaded after style.css. Extra breakpoint-specific tweaks live here.
+   (Core responsive rules for grids/nav/footer live inline in style.css —
+   this file is kept for any additional overrides you want to add later.)
    ========================================================================== */
 
-/* ===================== ≤1200px — Large tablet / small laptop ===================== */
-@media (max-width:1200px){
-  :root{ --gutter: clamp(24px, 5vw, 72px); }
-  .hero__title{ font-size:clamp(2.8rem,7vw,5rem); }
-}
-
-/* ===================== ≤1000px — Tablet ===================== */
-@media (max-width:1000px){
-  .about, .about--balanced, .reservation, .location{ grid-template-columns:1fr; }
-  .about__image{ order:-1; }
-  .about__frame{ display:none; }
-  .about__badge{ left:16px; bottom:-16px; width:84px; height:84px; }
-
-  .dish, .dish--reverse{ grid-template-columns:1fr; }
-  .dish--reverse .dish__media, .dish--reverse .dish__text{ order:initial; }
-
-  .gallery__grid{ grid-template-columns:repeat(2,1fr); }
-
-  .navbar__nav{ display:none; }
-  .navbar__burger{ display:flex; }
-
-  .footer__grid{ grid-template-columns:1fr 1fr; }
-  .footer__brand{ grid-column:1 / -1; }
-}
-
-/* ===================== ≤768px — Large mobile / small tablet ===================== */
-@media (max-width:768px){
-  .navbar__cta{ padding:9px 16px; font-size:.72rem; }
-  .menu__tabs{ gap:6px; }
-  .menu__tab{ padding:9px 16px; font-size:.72rem; }
-  .location__details{ gap:16px; }
-  .slider__arrow{ display:none; }
-}
-
-/* ===================== ≤640px — Mobile ===================== */
-@media (max-width:640px){
-  section{ padding:70px 22px; }
-
-  .hero__meta{ flex-wrap:wrap; }
-  .hero__title{ font-size:clamp(2.4rem,11vw,3.4rem); }
-  .hero__actions{ flex-direction:column; align-items:flex-start; }
-  .hero__actions .btn{ width:100%; text-align:center; }
-
-  .about__stats{ gap:22px; flex-wrap:wrap; }
-  .about__badge{ width:72px; height:72px; }
-  .about__badge-num{ font-size:1.2rem; }
-
-  .gallery__grid{ grid-template-columns:repeat(2,1fr); gap:10px; }
-
-  .menu__item{ padding-right:26px; margin:0 -8px; }
-  .menu__item h4{ white-space:normal; }
-
-  .form__row{ flex-direction:column; }
-
-  .footer__grid{ grid-template-columns:1fr; }
-  .footer__bottom{ flex-direction:column; }
+/* Safety net: no element should ever be allowed to push the page wider
+   than the viewport, regardless of what gets added here later. */
+html, body{
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* ===================== ≤400px — Small mobile ===================== */

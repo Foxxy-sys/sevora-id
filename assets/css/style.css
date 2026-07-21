@@ -23,7 +23,7 @@
 }
 
 *, *::before, *::after{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
+html{ scroll-behavior:smooth; overflow-x:hidden; max-width:100%; }
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior:auto; }
   *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
@@ -38,6 +38,7 @@ body{
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
+  max-width:100%;
 }
 
 h1,h2,h3,h4{
@@ -263,6 +264,7 @@ section{ position:relative; padding:clamp(60px,7vw,100px) var(--gutter); }
 .menu__panel.is-active{ display:flex; }
 .menu__item{
   position:relative; display:flex; align-items:baseline; gap:10px;
+  flex-wrap:wrap; row-gap:6px;
   padding:20px 34px 20px 14px; margin:0 -14px; border-radius:8px;
   border-bottom:1px solid var(--line);
   transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease);
@@ -288,7 +290,7 @@ section{ position:relative; padding:clamp(60px,7vw,100px) var(--gutter); }
   color:var(--accent); border:1px solid var(--accent); padding:4px 9px; border-radius:20px; transform:translateY(-1px);
 }
 .menu__badge--chef{ background:var(--accent); color:var(--bg); }
-.menu__item .dots{ flex:1; border-bottom:1px dotted var(--line); transform:translateY(-6px); }
+.menu__item .dots{ flex:1; border-bottom:1px dotted var(--line); transform:translateY(-6px); min-width:20px; }
 .menu__item .price{ font-size:.9rem; color:var(--accent); letter-spacing:.02em; white-space:nowrap; }
 
 /* ===================== GALLERY ===================== */
@@ -335,6 +337,7 @@ section{ position:relative; padding:clamp(60px,7vw,100px) var(--gutter); }
   background:rgba(248,245,241,.05); border:1px solid rgba(248,245,241,.18); border-radius:8px;
   color:var(--bg); padding:13px 15px; font-family:var(--font-body); font-size:.95rem;
   transition:border-color .3s var(--ease), background .3s var(--ease), box-shadow .3s var(--ease);
+  width:100%;
 }
 .form__field select option{ color:var(--primary); }
 .form__field input:focus, .form__field select:focus{
@@ -349,7 +352,7 @@ section{ position:relative; padding:clamp(60px,7vw,100px) var(--gutter); }
 
 /* ===================== TESTIMONIALS ===================== */
 .testimonials h2{ font-size:clamp(2rem,4vw,2.8rem); }
-.slider{ position:relative; max-width:760px; margin:60px auto 0; text-align:center; }
+.slider{ position:relative; max-width:760px; margin:60px auto 0; text-align:center; overflow:hidden; }
 .slider__track{ display:flex; transition:transform .6s var(--ease); }
 .slide{ min-width:100%; padding:0 20px; }
 .slide__quote{ font-family:var(--font-head); font-size:clamp(1.2rem,2.4vw,1.6rem); color:var(--primary); font-style:italic; line-height:1.5; }
@@ -442,4 +445,18 @@ section{ position:relative; padding:clamp(60px,7vw,100px) var(--gutter); }
   .about__stats{ gap:28px; flex-wrap:wrap; }
   .footer__grid{ grid-template-columns:1fr; }
   .footer__bottom{ flex-direction:column; }
+}
+
+/* ===================== MENU ITEM — MOBILE FIX ===================== */
+/* Prevents menu name + badge + price from overflowing the viewport width
+   on narrow phones (fixes the sideways-scroll / white-space bug). */
+@media (max-width:480px){
+  .menu__item h4{ white-space:normal; }
+  .menu__item .dots{ display:none; }
+  .menu__item{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+  }
+  .menu__item .price{ align-self:flex-end; margin-top:-4px; }
 }
